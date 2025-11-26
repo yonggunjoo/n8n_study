@@ -23,4 +23,4 @@ jobs:
               "pull_request_author": "${{ github.event.pull_request.user.login }}"
             }' \
             # 아래 주소를 변경해서 사용하시면 됩니다
-            "https://auto/webhook-test/10d9b9a5-99d9-4040-aad8-c378dc94bd09"  
+            "http://auto/webhook-test/10d9b9a5-99d9-4040-aad8-c378dc94bd09/webhook"
