@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Send PR notification to webhook
         run: |
-          curl -X POST "http://auto/webhook-test/10d9b9a5-99d9-4040-aad8-c378dc94bd09/webhook" \
+          curl -X POST "https://efrain-removable-cognisably.ngrok-free.dev/webhook-test/10d9b9a5-99d9-4040-aad8-c378dc94bd09/webhook" \
             -H "Content-Type: application/json" \
             -d '{
               "repository_owner": "${{ github.repository_owner }}",
