@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Send PR notification to webhook
         run: |
-          curl -X POST \
+          curl -X POST "http://auto/webhook-test/10d9b9a5-99d9-4040-aad8-c378dc94bd09/webhook" \
             -H "Content-Type: application/json" \
             -d '{
               "repository_owner": "${{ github.repository_owner }}",
@@ -21,6 +21,4 @@ jobs:
               "action": "${{ github.event.action }}",
               "pull_request_title": "${{ github.event.pull_request.title }}",
               "pull_request_author": "${{ github.event.pull_request.user.login }}"
-            }' \
-            # 아래 주소를 변경해서 사용하시면 됩니다
-            "http://auto/webhook-test/10d9b9a5-99d9-4040-aad8-c378dc94bd09/webhook"
+            }' 
