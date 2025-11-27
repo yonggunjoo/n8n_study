@@ -96,7 +96,7 @@ Forwarding: https://abc123.ngrok.io -> http://localhost:8888
 - **외부 접속**: ngrok URL 사용
 
 ### 회원가입
-![image](./img/회원가입.png)
+![image](doc/img/회원가입.png)
 
 ## n8n 워크플로우 구성
 
@@ -164,39 +164,39 @@ GitHub에서 Personal Access Token을 생성해야 합니다.
 
 #### 트리거 추가
 1. n8n 워크플로우에서 새로운 트리거를 추가합니다.
-   ![image](./img/트리거설정메뉴.png)
+   ![image](doc/img/트리거설정메뉴.png)
 
 2. 트리거 타입을 선택합니다.
-   ![image](./img/트리거설정-1.png)
-   ![image](./img/트리거설정-2.png)
+   ![image](doc/img/트리거설정-1.png)
+   ![image](doc/img/트리거설정-2.png)
 
 #### GitHub 연결 설정
 1. **Credential to connect with** 설정
    - 사전작업: GitHub Token 발급 필요
    - Settings > Personal access token > tokens(classic)에서 토큰 생성
    
-   ![image](./img/github_creadential_to_connect_with.png)
+   ![image](doc/img/github_creadential_to_connect_with.png)
 
 2. **GitHub 트리거 설정**
    - 아래 이미지와 같이 설정 완료 후 Test URL 복사
    - Execute step 버튼 클릭
    
-   ![image](./img/github_trigger.png)
+   ![image](doc/img/github_trigger.png)
 
 3. **PR Webhook 확인**
    - PR Webhook 단계를 성공하고 요청 결과를 확인
    
-   ![image](./img/PR_webhook.png)
+   ![image](doc/img/PR_webhook.png)
 
 ### 3. AI Agent 추가
 
 #### AI Agent 노드 추가
 1. '+' 버튼을 클릭하여 AI Agent 추가
-   ![image](img/ai_agent.png)
+   ![image](doc/img/ai_agent.png)
 
 2. **AI Agent 설정**
-   ![image](img/Ai_Agent_설정.png)
-   ![image](img/ai_agent.png)
+   ![image](doc/img/Ai_Agent_설정.png)
+   ![image](doc/img/ai_agent.png)
 
 #### Chat Model 및 Tool 설정
 1. **Chat Model 추가**
@@ -210,11 +210,11 @@ GitHub에서 Personal Access Token을 생성해야 합니다.
 ### 4. 워크플로우 완성 및 테스트
 
 #### 완성된 Flow
-![image](img/완성flow.png)
+![image](doc/img/완성flow.png)
 
 #### 코드리뷰 결과 확인
 실제 Pull Request에서 AI가 작성한 리뷰 코멘트를 확인할 수 있습니다.
-![image](img/pr_review.png)
+![image](doc/img/pr_review.png)
 
 ### 코드리뷰봇 동작 흐름
 1. **GitHub PR 생성/업데이트** → Webhook 트리거 발동
